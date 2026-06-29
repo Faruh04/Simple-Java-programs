@@ -313,10 +313,14 @@ public class Main {
 
         //OOP
         Transport bmw = new Transport();
-        bmw.speed = 400.13f;
+        bmw.setValues(400.13f, 2500, "White", new byte[]{ 0, 0, 0 });
+        String res1 = bmw.getValues();
+        System.out.println(res1);
+
+        /*bmw.speed = 400.13f;
         bmw.weight = 2500;
         bmw.color = "White";
-        bmw.coordinate = new byte[]{ 0, 0, 0};
+        bmw.coordinate = new byte[]{ 0, 0, 0};*/
 
 
         Transport truck = new Transport();
@@ -325,8 +329,10 @@ public class Main {
         truck.color = "Green";
         truck.coordinate = new byte[]{ 100, 0, 100};
 
+        String res2 = truck.getValues();
+        System.out.println(res2);
 
-        System.out.println("Truck speed: " + truck.speed + "\nBMW speed: " + bmw.speed);
+        //System.out.println("Truck speed: " + truck.speed + "\nBMW speed: " + bmw.speed);
 
 
 
