@@ -319,10 +319,14 @@ public class Main {
         bmw.coordinate = new byte[]{ 0, 0, 0};
 
 
+        Transport truck = new Transport();
+        truck.speed = 150.50f;
+        truck.weight = 5000;
+        truck.color = "Green";
+        truck.coordinate = new byte[]{ 100, 0, 100};
 
 
-
-
+        System.out.println("Truck speed: " + truck.speed + "\nBMW speed: " + bmw.speed);
 
 
 
