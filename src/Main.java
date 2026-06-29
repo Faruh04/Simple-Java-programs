@@ -161,6 +161,7 @@ public class Main {
 
 
 
+/*
 
 
 
@@ -223,9 +224,80 @@ public class Main {
 
 
 
+*/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+        //Methods
+        info("Hello");
+        String java = "Java";
+        info(java);
+        info("");
+
+        */
+/*
+
+        short num = 7;
+        int result = sum((short) 4,num);
+
+        short num2 = 9;
+        int result2 = sum((short) 5,num);
+        info(String.valueOf(result2));
+*/
+
+
+
+
+        byte[] num1 = new byte[]{
+                5, 6, 8
+        };
+
+        int sum1 = sumArray(num1);
+        System.out.println("Сумма1: " + sum1);
+
+
+
+        byte[] num2 = new byte[]{
+                5, 6, 8, 12, 23, 23, 44, 5
+        };
+
+        int sum2 = sumArray(num2);
+        System.out.println("Сумма2: " + sum2);
 
 
 
@@ -234,6 +306,58 @@ public class Main {
 
 
     }
+
+
+
+
+
+    public static int sumArray(byte[] arr){
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++ )
+            sum += arr[i];
+
+        return sum;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    public static int sum(short a, short b){
+        int res = a + b;
+        String result = "Результат: " + res;
+        info(result);
+        return res;
+    }
+
+
+
+
+    public static void info(String word){
+        System.out.print(word);
+        System.out.println("!");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
