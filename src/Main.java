@@ -282,6 +282,7 @@ public class Main {
 
 
 
+/*
 
         byte[] num1 = new byte[]{
                 5, 6, 8
@@ -298,6 +299,33 @@ public class Main {
 
         int sum2 = sumArray(num2);
         System.out.println("Сумма2: " + sum2);
+
+*/
+
+
+
+
+
+
+
+
+
+
+        //OOP
+        Transport bmw = new Transport();
+        bmw.speed = 400.13f;
+        bmw.weight = 2500;
+        bmw.color = "White";
+        bmw.coordinate = new byte[]{ 0, 0, 0};
+
+
+
+
+
+
+
+
+
 
 
 
@@ -344,6 +372,10 @@ public class Main {
         System.out.print(word);
         System.out.println("!");
     }
+
+
+
+
 
 
 
